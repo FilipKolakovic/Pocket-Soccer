@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backgroundmain">
+
+    <TextView
+        android:id="@+id/txmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POCKET SOCCER"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/resumeB"
+        android:layout_height="wrap_content"
+        android:text="RESUME"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shapebutton"
+        android:onClick="resumeGame"/>
+
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/newgameB"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="NEW GAME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shapebutton"
+        android:onClick="newGameStart"/>
+
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/statisticB"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="STATISTIC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shapebutton"
+        android:onClick="viewStatistic"/>
+
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/settingsB"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="SETTINGS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shapebutton"
+        android:onClick="settings"/>
+
+
+
+
+
+</LinearLayout>

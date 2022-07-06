@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="@drawable/backgroundmain"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEREN:"/>
+
+            <Spinner
+                android:id="@+id/terenSpinner"
+                android:layout_marginLeft="60dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
+                <TextView
+                    style="@style/textViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZAVRSETAK:"
+                    android:layout_marginLeft="50dp"/>
+                <RadioGroup
+                    android:id="@+id/radiogroupZavrsetak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/goloviRadioB"
+                        android:text="GOLOVI"
+                        android:checked="true"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp" />
+                    <RadioButton
+                        android:id="@+id/vremeRadioB"
+                        android:text="VREME"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold"
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"/>
+                </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+                <TextView
+                    style="@style/textViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BRZINA:"
+                    android:layout_marginLeft="50dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radiogroupBrzina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/slowRadioB"
+                        android:text="SPORO"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"/>
+                    <RadioButton
+                         android:id="@+id/mediumRadioB"
+                         android:text="SREDNJE"
+                        android:checked="true"
+                         android:textColor="#FFFF"
+                         android:textStyle="bold"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"/>
+                    <RadioButton
+                        android:id="@+id/fastRadioB"
+                        android:text="BRZO"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"/>
+                </RadioGroup>
+        </LinearLayout>
+    <Button
+        android:id="@+id/buttonPotvrdiSettings"
+        android:text="Potvrdi"
+        style="@style/buttonStyle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapebutton"
+        android:layout_gravity="center"
+        android:onClick="potvrdi"/>
+
+</LinearLayout>

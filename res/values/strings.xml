@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PocketSoccer</string>
+
+    <string-array name="timovi">
+        <item>Hungary</item>
+        <item>Algeria</item>
+        <item>Australia</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Ireland</item>
+        <item>Denmark</item>
+        <item>England</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+        <item>Honduras</item>
+    </string-array>
+</resources>

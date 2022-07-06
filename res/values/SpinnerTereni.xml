@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tereni" >
+        <item>TERENI:</item>
+        <item>Trava</item>
+        <item>Beton</item>
+        <item>Parket</item>
+    </string-array>
+</resources>
